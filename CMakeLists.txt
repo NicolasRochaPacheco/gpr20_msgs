@@ -51,14 +51,16 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    Coordinates.msg
+   PositionerStatus.msg
 )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  GoToPoint.srv
+  PositionerHoming.srv
+  PositionerAbort.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
