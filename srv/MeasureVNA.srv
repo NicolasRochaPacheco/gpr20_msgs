@@ -1,0 +1,11 @@
+string survey_id 	# An ID for the current survey
+float32 x_coord		# X coordinate of the measurement
+float32 y_coord		# Y coordinate of the measurement
+float32 z_angle		# Z angle of the measurement
+string processing 	# Processing type of the measurement. Could be:
+					#	-> 'raw': S11 frequency-domain data.
+					#	-> 'time': IDFT time-domain data.
+					#	-> 'filtered': Filtered time-domain data.
+					#	-> 'full': Filtered and deconvoluted time-domain data.
+---
+bool assert
