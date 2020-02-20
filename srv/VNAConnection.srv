@@ -1,0 +1,8 @@
+bool connect 	# True for connecting
+				# False for disconnecting
+
+string ip		# IP address of device
+---
+bool assert		# Assert if operation was completed
+				# True if it was sucessful
+				# False if not
