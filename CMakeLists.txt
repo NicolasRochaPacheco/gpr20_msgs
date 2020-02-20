@@ -52,6 +52,7 @@ add_message_files(
    FILES
    Coordinates.msg
    PositionerStatus.msg
+   VNAData.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -60,6 +61,10 @@ add_service_files(
   GoToPoint.srv
   PositionerHoming.srv
   PositionerAbort.srv
+  SetupVNA.srv
+  MeasureVNA.srv
+  VNAConnection.srv
+  Proceed.srv
 )
 
 ## Generate actions in the 'action' folder
