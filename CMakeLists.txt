@@ -64,7 +64,7 @@ add_service_files(
   SetupVNA.srv
   MeasureVNA.srv
   VNAConnection.srv
-  Proceed.srv
+  freqSweep.srv
 )
 
 ## Generate actions in the 'action' folder
