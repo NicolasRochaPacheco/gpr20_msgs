@@ -1,5 +1,0 @@
-<launch>
-	<!-- Launches requiered nodes for GPR-20 robot -->
-	<node name="gpr_ui" pkg="gpr_ui" type="gpr_ui.py" output="screen"/>
-	<node name="positioner" pkg="positioner" type="positioner.py" output="screen"/>
-</launch>
