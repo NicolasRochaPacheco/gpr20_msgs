@@ -1,1 +1,2 @@
-uint8 status
+string vna_status
+string positioner_status
