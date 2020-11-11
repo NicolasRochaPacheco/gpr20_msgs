@@ -50,21 +50,45 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
    FILES
-   Coordinates.msg
+
+   GPRStatus.msg
+
    PositionerStatus.msg
    VNAData.msg
+
+   # gpr_control messages
+   FreqParams.msg
+   VNAParams.msg
+   SurveyParams.msg
+
+   # gpr_positioner messages
+   SurveyPoints.msg
+   Coordinates.msg
 )
 
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
   GoToPoint.srv
-  PositionerHoming.srv
   PositionerAbort.srv
   SetupVNA.srv
   MeasureVNA.srv
-  VNAConnection.srv
-  freqSweep.srv
+
+  # gpr_control services
+  FreqSweep.srv
+  PositionerHoming.srv
+  
+  # VNA services
+  VNAConnectionSrv.srv
+  VNAParamsSrv.srv
+  VNACalibrationSrv.srv
+
+  # Survey services
+  SurveyParamsSrv.srv
+  StartSurveySrv.srv
+
+  # Data storage services
+  LabelsSrv.srv
 )
 
 ## Generate actions in the 'action' folder
