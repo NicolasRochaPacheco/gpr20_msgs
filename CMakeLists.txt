@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(gpr_msgs)
+project(gpr20_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -73,15 +73,17 @@ add_service_files(
   PositionerAbort.srv
   SetupVNA.srv
   MeasureVNA.srv
+  MoveAxisToPosition.srv
 
   # gpr_control services
   FreqSweep.srv
   PositionerHoming.srv
-  
+
   # VNA services
-  VNAConnectionSrv.srv
-  VNAParamsSrv.srv
-  VNACalibrationSrv.srv
+  VNAConnection.srv
+  VNASweep.srv
+  VNACalibration.srv
+  VNAMeasurement.srv
 
   # Survey services
   SurveyParamsSrv.srv

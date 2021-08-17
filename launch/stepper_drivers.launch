@@ -1,0 +1,19 @@
+<launch>
+	<!-- Launches driver for X axis (linear) -->
+	   <node name="gpr20_x_axis" pkg="gpr20_axis" type="axis_node" output="screen">
+        <param name="dir_pin" type="int" value="16" />
+        <param name="step_pin" type="int" value="18" />
+        <param name="sensor_pin" type="int" value="7" />
+        <param name="step_size" type="double" value="0.01" />
+        <param name="min_axis_limit" type="double" value="0" />
+        <param name="max_axis_limit" type="double" value="850" />
+    </node>
+
+	<!-- Launches driver for Y axis (linear) -->
+
+
+	<!-- Launches driver for Z axis (rotational) -->
+
+
+
+</launch>
