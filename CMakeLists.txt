@@ -69,11 +69,18 @@ add_message_files(
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
+
+  # Ratified files
+  GridSurveyParameters.srv
+  MoveAxisToPosition.srv
+  StartSurvey.srv
+  
+  
+  # Non-ratified files
   GoToPoint.srv
   PositionerAbort.srv
   SetupVNA.srv
   MeasureVNA.srv
-  MoveAxisToPosition.srv
 
   # gpr_control services
   FreqSweep.srv
@@ -87,7 +94,6 @@ add_service_files(
 
   # Survey services
   SurveyParamsSrv.srv
-  StartSurveySrv.srv
 
   # Data storage services
   LabelsSrv.srv
