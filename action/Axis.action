@@ -1,5 +1,5 @@
 # Defines the goal as the target coordinate for axis
-float32 taget_coordinate
+float32 target_coordinate
 ---
 # Defines the result as a boolean telling if the axis has reached the target coordinate
 bool result
