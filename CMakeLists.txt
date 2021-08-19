@@ -8,9 +8,11 @@ project(gpr20_msgs)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  roscpp
   rospy
+  roscpp
+  genmsg
   std_msgs
+  actionlib_msgs
   message_generation
 )
 
@@ -100,16 +102,16 @@ add_service_files(
 )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+add_action_files(
+  FILES
+  axis.action # Action definition for axis node
+)
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
-  std_msgs  # Or other packages containing msgs
+  std_msgs
+  actionlib_msgs
 )
 
 ################################################
