@@ -104,7 +104,7 @@ add_service_files(
 ## Generate actions in the 'action' folder
 add_action_files(
   FILES
-  axis.action # Action definition for axis node
+  Axis.action # Action definition for axis node
 )
 
 ## Generate added messages and services with any dependencies listed here
