@@ -2,6 +2,7 @@
 	
     <!-- Launches driver for X axis (linear) -->
 	   <node name="axis_node" pkg="gpr20_axis" ns="gpr20_x_axis" type="axis_node" output="screen">
+        <param name="type" type="str" value="linear" />
         <param name="dir_pin" type="int" value="13" />
         <param name="step_pin" type="int" value="15" />
         <param name="sensor_pin" type="int" value="7" />
@@ -15,6 +16,7 @@
 
 	<!-- Launches driver for Y axis (linear) -->
 	<node name="axis_node" pkg="gpr20_axis" ns="gpr20_y_axis" type="axis_node" output="screen">
+        <param name="type" type="str" value="linear" />
         <param name="dir_pin" type="int" value="16" />
         <param name="step_pin" type="int" value="18" />
         <param name="sensor_pin" type="int" value="11" />
