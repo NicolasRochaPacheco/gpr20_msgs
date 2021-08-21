@@ -1,0 +1,14 @@
+# Defines the survey goal as its parameters.
+# Survey parameters definition
+float32 x_start
+float32 x_end
+int32 x_points
+float32 y_start
+float32 y_end
+int32 y_points
+---
+# Defines the survey result as a boolean indicator
+bool finished
+---
+# Defines the feedback
+float32 completion_percentage
