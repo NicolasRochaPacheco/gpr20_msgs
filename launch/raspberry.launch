@@ -1,5 +1,5 @@
 <launch>
 	<!-- Launches requiered nodes for GPR-20 robot -->
-	<node name="raspi_ui" pkg="raspi_ui" type="raspi_ui.py" output="screen"/>
+	<node name="raspi_ui" pkg="gpr20_raspi_ui" type="raspi_ui_node" output="screen"/>
 	<!-- node name="positioner" pkg="positioner" type="positioner.py" output="screen"/ -->
 </launch>
