@@ -6,6 +6,10 @@ int32 x_points
 float32 y_start
 float32 y_end
 int32 y_points
+string ip_address
+int64 f_start
+int64 f_end
+int32 f_points
 ---
 # Defines the survey result as a boolean indicator
 bool finished
