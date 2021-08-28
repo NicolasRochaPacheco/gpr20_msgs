@@ -29,7 +29,7 @@
     </node>
 
 	<!-- Launches driver for Z axis (rotational) -->
-    <node name="axis_node" pkg="gpr20_axis" ns="gpr20_y_axis" type="axis_node" output="screen">
+    <node name="axis_node" pkg="gpr20_axis" ns="gpr20_z_axis" type="axis_node" output="screen">
         <param name="type" type="str" value="rotational" />
         <param name="dir_pin" type="int" value="29" />
         <param name="step_pin" type="int" value="31" />
