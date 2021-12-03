@@ -1,4 +1,4 @@
-</launch>
+<launch>
 
     <node name="axis_node" pkg="gpr20_axis" ns="gpr20_z_axis" type="axis_node" output="screen">
         <param name="dir_pin" type="int" value="11" />
