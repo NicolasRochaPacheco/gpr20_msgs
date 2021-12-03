@@ -51,21 +51,27 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate messages in the 'msg' folder
 add_message_files(
-   FILES
+  FILES
+  
+  # Ratified files
+  GPR20AxisStatus.msg
 
-   GPRStatus.msg
+  GPRStatus.msg
 
-   PositionerStatus.msg
-   VNAData.msg
+  PositionerStatus.msg
+  VNAData.msg
 
-   # gpr_control messages
-   FreqParams.msg
-   VNAParams.msg
-   SurveyParams.msg
+  # VNA messages
+  VNAStatus.msg
+  
+  # gpr_control messages
+  FreqParams.msg
+  VNAParams.msg
+  SurveyParams.msg
 
-   # gpr_positioner messages
-   SurveyPoints.msg
-   Coordinates.msg
+  # gpr_positioner messages
+  SurveyPoints.msg
+  Coordinates.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -76,7 +82,13 @@ add_service_files(
   GridSurveyParameters.srv
   MoveAxisToPosition.srv
   StartSurvey.srv
-  
+  GetHeight.srv
+  VNAGetData.srv
+  VNAGetFreq.srv
+  VNAConnection.srv
+  VNASweepSetup.srv
+  GPR20Parameters.srv
+  GPR20ControlStatus.srv
   
   # Non-ratified files
   GoToPoint.srv
@@ -85,15 +97,8 @@ add_service_files(
   MeasureVNA.srv
 
   # gpr_control services
-  FreqSweep.srv
   PositionerHoming.srv
-
-  # VNA services
-  VNAConnection.srv
-  VNASweep.srv
-  VNACalibration.srv
-  VNAMeasurement.srv
-
+  
   # Survey services
   SurveyParamsSrv.srv
 
