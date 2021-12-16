@@ -49,14 +49,12 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
-## Generate messages in the 'msg' folder
+## Define the used messages for the GPR20 robot software stack
 add_message_files(
   FILES
   
-  # Ratified files
+  # Used by axis driver to communicate the axis status
   GPR20AxisStatus.msg
-
-  GPRStatus.msg
 
   PositionerStatus.msg
   VNAData.msg
