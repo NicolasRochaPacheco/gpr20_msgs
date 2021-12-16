@@ -1,5 +1,0 @@
-<launch>
-	<!-- Launches requiered nodes for GPR-20 server -->
-	<node name="server_ui" pkg="server_ui" type="server_ui.py" output="screen"/>
-	<node name="vna_handler" pkg="vna_handler" type="vna_handler.py" output="screen" />
-</launch>
