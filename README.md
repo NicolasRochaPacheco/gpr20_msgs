@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-# GPR-20 ROS Messages Package (gpr_msgs)
+# GPR-20 ROS Messages Package (gpr20_msgs)
+This package contains the ROS messages, actions, services and launch files that are used in the GPR-20 robot. Since definitions are paramount for running every utility of the robot's software, this package must be present in every machine running utilities. It is agreed that nodes can be only executed via launch files, that are required to be present in this package.
 
-This package contains the messages that will be used in the GPR-20 robot ROS system. This package should be used in both the server and GPR workspaces. This package also contains two launch files, intended to also be used in the server and the GPR.
-=======
-# gpr_msgs
-
->>>>>>> 19a6b4e84ed327962688138faa6a0db28b5ceee7
+## Launch Files
+There are two launch files in the package:
+- __GPR20_robot:__ launches the nodes that are meant to run in the robot's onboard computer.
+- __GPR_server:__ launches the nodes that are meant to run in a server computer.
