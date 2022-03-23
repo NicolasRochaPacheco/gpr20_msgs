@@ -1,5 +1,0 @@
-float32 start_freq
-float32 stop_freq
-int32 points_number
----
-bool result
