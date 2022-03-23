@@ -1,8 +1,5 @@
-bool connect 	# True for connecting
-				# False for disconnecting
-
-string ip		# IP address of device if connecting
+bool connection # 'true' if attempting to connect to VNA
+                # 'false' if attempting to disconenct from VNA
+string ip_addr  # IP address if a connection attempt is made
 ---
-bool result		# Assert if operation was completed
-				# True if it was sucessful
-				# False if not
+bool status     # Status response from VNA driver
